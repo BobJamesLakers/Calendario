@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/l1.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Calendário</h1>
+    <h2 id="titulo-mes-ano">Abril 2024</h2>
+
+    <div class="image-overlay">
+        <img src="imagens/lg.png" alt="Descrição da Imagem">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Domingo</th>
+                <th>Segunda-feira</th>
+                <th>Terça-feira</th>
+                <th>Quarta-feira</th>
+                <th>Quinta-feira</th>
+                <th>Sexta-feira</th>
+                <th>Sábado</th>
+            </tr>
+        </thead>
+        <tbody id="corpo-calendario">
+            <!-- Aqui será gerado o calendário dinamicamente -->
+        </tbody>
+    </table>
+
+    <div id="feriados">
+        <h2>Feriados</h2>
+        <table id="tabela-feriados">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aqui serão exibidos os feriados dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="podcasts">
+        <h2>Podcasts</h2>
+        <table id="tabela-podcasts">
+            <thead>
+                <tr>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>        
+                        <img src="imagens/lg.png" alt="Descrição da Imagem">
+                    </td>
+
+                    <td>
+                        <audio controls>
+                            <source src="caminho/do/arquivo/de/audio.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                          </audio>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="publicidade">
+        <h2>Publicidade</h2>
+        <table id="tabela-publicidade">
+            <thead>
+                <tr>
+                    <td>        
+                        <img src="imagens/lg.png" alt="Descrição da Imagem">
+                    </td>
+
+                    <td>
+                       
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aqui serão exibidos os elementos dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <button id="anterior-btn">Mês Anterior</button>
+    <button id="proximo-btn">Próximo Mês</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
